@@ -1,0 +1,162 @@
+*{
+    font-family:  sans-serif;
+}
+body{
+    background-image: linear-gradient(to bottom right,rgb(0, 0, 0),rgb(24, 29, 29),rgb(63, 71, 71));
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 1250px;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    box-shadow: none;
+    position: relative;
+    top: -30px;
+}
+.navbar{
+    position: fixed;
+    z-index: 2;
+}
+.navigate{
+    position: relative;
+    left: 750px;
+    top: -150px;
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 20px;
+}
+ nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: 1s ease-in-out;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.sec{
+    height: 500px;
+    position: relative;
+    top: 80px;
+}
+.img1{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.img2{
+    position:absolute;
+    top: 300px;
+    left:200px;
+}
+img{
+    float: left;
+    box-shadow: 5px -1px 12px -5px rgb(0, 255, 255);
+}
+.sec article h3{
+    color: rgba(170, 240, 240, 0.986);
+    font-size: 50px;
+}
+.sec article h3 span{
+    color: rgba(255, 238, 0, 0.986);
+}
+.article{
+    position: absolute;
+    top: 60px;
+    left: 600px;
+}
+.sec article p{
+    font-size: 17px;
+    color: rgba(238, 238, 238, 0.973);
+    font-family: 'Lucida Sans';
+}
+.article1{
+    left: 0px;
+    width: 600px;
+    margin-left: 100px;
+}
+.img3{
+    position: absolute;
+    top: 250px;
+    left: 760px;
+}
+.img4{
+    position: absolute;
+    top: 150px;
+    left: 900px;
+}
+footer{
+    height: 50px;
+    width: 1300px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    top: 230px;
+    left: -7px;
+}
+footer label{
+    color: white;
+    font-size: 12px;
+    
+}
+.intro{
+    color: white;
+}
+.scroller{
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 10em;
+}
+  .scroller span{
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+    font-weight: bold;
+    color: rgba(255, 238, 0, 0.986);
+}
+
+.btn{
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.pic{
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+#link{
+    text-decoration: none;
+    color:rgba(255, 238, 0, 0.986);
+}
+
+@keyframes slide{
+    0% {
+          top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+}

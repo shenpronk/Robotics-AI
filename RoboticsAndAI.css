@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:  sans-serif;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("cover.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 20px;
+}
+ nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: 1s ease-in-out;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.heading h1{
+    color: white;
+    font-size: 80px;
+}
+.heading h2{
+    color: grey;
+    font-size: 50px;
+}
+.button{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+main{
+    transition: 1s ease-out;
+    background-color: rgb(34, 31, 31);
+}
+.intro{
+    color: white;
+}
+.scroller{
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 10em;
+}
+  .scroller span{
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+    font-weight: bold;
+    color: rgba(255, 238, 0, 0.986);
+}
+@keyframes slide{
+    0% {
+          top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+}
